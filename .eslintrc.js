@@ -3,30 +3,30 @@ module.exports = {
     browser: true,
     es2021: true,
     // 新增
-    node: true,
+    node: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:vue/vue3-essential",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'plugin:vue/vue3-essential',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    parser: "@typescript-eslint/parser",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
   },
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
-    "no-var": "error",
-    "vue/no-multiple-template-root": "off",
-    semi: ["error", "never"],
-    "prettier/prettier": [
-      "error",
+    'no-var': 'error',
+    'vue/no-multiple-template-root': 'off',
+    semi: ['error', 'never'],
+    'prettier/prettier': [
+      'error',
       {
-        endOfLine: "auto",
-      },
-    ],
+        endOfLine: 'auto'
+      }
+    ]
   },
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser'
 }
